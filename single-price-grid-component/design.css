@@ -1,0 +1,138 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%,93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --font-size: 16px;
+    --font-family: 'Karla';
+    --font-weight1: 400;
+    --font-weight2: 700;
+    --box-shadow: lightgray;
+}
+/*create a general box size*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--light-gray);
+    background-color: var(--light-gray);
+    font-family: var(--font-family), sans-serif;
+    font-size: var(--font-size);
+}
+div {
+    padding: 20px 20px;
+}
+h1{
+    font-size: 1.4rem;
+    font-weight: var(--font-weight2);
+    margin: 10px auto;
+}
+h2{
+  font-size: 1.1rem;
+  font-weight: var(--font-weight2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main{
+    border-radius: 10px;
+    margin: 5vh auto;
+    text-align: left;
+    width: 55%;
+    min-width: 300px;
+    max-width: 700px;
+    box-shadow: 0px 8px 8px 8px var(--box-shadow);
+}
+p{
+    font-size: .8rem;
+    line-height: 1.6;
+    padding-top: 5px;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding-top: 10px;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution{
+    color: var(--cyan);
+}
+.clickable-button{
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 15px;
+    background: lime;
+    padding: 10px 10px;
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+}
+.clickable-button:hover{
+    background: cornsilk;
+}
+.top h1{
+    color: var(--cyan);
+    text-align: center;
+}
+.top h2{
+    color: var(--bright-yellow);
+    text-align: center;
+}
+.top{
+    background-color: whitesmoke;
+    color: var(--grayish-blue);
+}
+.subscription{
+    color: #fff;
+    background-color: var(--cyan);
+}
+.subscription p{
+    padding-top: 10px;
+}
+.amount{
+    font-size: 2.1rem;
+    font-weight: var(--font-weight2);
+    opacity: 1;
+    vertical-align: middle;
+    padding-right: 8px;
+}
+.duration{
+    opacity: 0.5;
+    vertical-align: left;
+}
+.about{
+    background-color:lightskyblue;
+    color: white;
+}
+.about li{
+    opacity: 1;
+}
+@media screen and (min-width:700px){
+    div{
+        padding: 35px 35px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 20vh auto;
+    }
+    p, li{
+        font-size: 1.2rem;
+    }
+    .top{
+        grid-column: 1/3;
+    }
+}
